@@ -1,0 +1,427 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --background: linear-gradient(to right, #3a7bd5, #3a6073);
+}
+
+html,
+body {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    background-image: var(--background);
+    font-family: 'Roboto';
+
+}
+
+/* шапка */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+    color: #ffffff;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+    margin: 90px 0 20px 0;
+    
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+ a:hover {
+    color: #1a79ca;
+    transition-duration: 0.5s;
+}
+
+.logo {
+    margin-left: 30px;
+}
+
+ a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo :hover{
+    background-color:rgba(255, 255, 255, 0.1);
+    transition-duration: 0.5s;
+}
+
+.buttons {
+    margin-right: 30px;
+}
+
+.button {
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+    margin: 0 10px;
+}
+
+.button:hover {
+    background-color: #1a79ca;
+    transition-duration: 0.5s;
+}
+
+/* footer */
+
+
+.footer {
+    display: flex;
+    width: 100%;
+    background-color: black;
+    color: #ffffff;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;   
+}
+
+.container_footer{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-bottom: #fff solid 1px;
+    justify-content: center;
+    width: 80%;
+    text-align: left;
+}
+
+.adittional_container_footer{
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.container_footer h1{
+    font-size: 25px;
+}
+
+
+.column_footer_left,
+.column_footer_right{
+    flex: 1;
+    text-align: center;
+}
+
+.mail{
+    margin: 10px 0 10px 0; 
+}
+
+.number{
+    margin-bottom: 10px;
+}
+
+.cookie{
+    margin-top: 15px;
+
+}
+.adittional_column_footer_right{
+    flex: 1;
+    text-align: left;
+}
+.adittional_column_footer_left{
+    flex: 1 ;
+}
+
+.copyright  {
+    margin-top: 15px;
+}
+
+.logo_footer {
+    margin: 15px 10px 0 -15px;
+    height: 30px;
+}
+
+.adittional_column_footer_left ul{
+    list-style-type: none;
+}
+
+.footer a{
+    font-size: 18px;
+}
+
+.partners{
+    margin-top: 15px;
+}
+
+/* прижатие футера */
+
+main {
+    flex: 1;
+}
+
+/* popup для входа и регистрации */
+
+.popup_login,
+.popup_registration {
+    position: absolute;
+    top: -150%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.25);
+    width: 386px;
+    padding: 20px 30px;
+    background: #fff;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    transition: top 0ms ease-in-out 200ms,
+    opacity 200ms ease-in-out 0ms,
+    transform 200ms ease-in-out 0ms;
+    z-index: 1000;
+}
+
+.popup_login.active,
+.popup_registration.active{
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    transition: top 0ms ease-in-out 0ms,
+    opacity 200ms ease-in-out 0ms,
+    transform 20ms ease-in-out 0ms;
+}
+
+.overlay.active {
+    display: block
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный цвет */
+    z-index: 999; /* Выше, чем другие элементы на странице */
+    display: none; /* По умолчанию скрыт */
+}
+
+.popup_login .close-btn,
+.popup_registration .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    background: #000;
+    color: #eee;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.popup_login .form h2,
+.popup_registration .form h2 {
+    text-align: center;
+    color: #222;
+    margin: 10px 0px 20px;
+    font-size: 25px;
+}
+
+.popup_login .form .form-element,
+.popup_registration .form .form-element  {
+    margin: 15px 0px;
+}
+
+.popup_login .form .form-element label,
+.popup_registration .form .form-element label {
+    font-size: 14px;
+    color: #222;
+}
+
+.popup_login .form .form-element input[type="text"],
+.popup_login .form .form-element input[type="password"],
+.popup_registration .form .form-element input[type="text"],
+.popup_registration .form .form-element input[type="password"] {
+    margin-top: 5px;
+    display: block;
+    width: 95%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.popup_login .form .form-element input[type="checkbox"],
+.popup_registration .form .form-element input[type="checkbox"]  {
+    margin-right: 5px;
+}
+
+.popup_login .form .form-element button,
+.popup_registration .form .form-element button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #222;
+    color: #f5f5f5;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.popup_login .form .form-element a, 
+.popup_registration .form .form-element a{
+    display: block;
+    text-align: right;
+    font-size: 15px;
+    color: #1a79ca;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* main секции сайта */
+.title{
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+}
+
+#python{
+    background-color: rgb(73, 232, 15);
+}
+
+#python_img{
+    height: 50px;
+    width: 120px;
+}
+
+#java{
+    background-color: rgb(255, 208, 0);
+}
+
+#java_img{
+    height: 80px;
+    width: 150px;
+}
+
+#javaScript{
+    background-color: rgb(251, 255, 0);
+}
+
+#js_img{
+    height: 80px;
+    width: 80px;
+}
+
+#c{
+    background-color: rgb(67, 106, 226);
+}
+#c_img{
+    height: 80px;
+    width: 80px;
+}
+
+#ruby{
+    background-color: rgb(174, 16, 16);
+}
+#ruby_img{
+    height: 80px;
+    width: 80px;
+}
+
+#android{
+    background-color: rgba(45, 160, 7, 0.603);
+}
+#android_img{
+    height: 80px;
+    width: 80px;
+}
+.product-card {
+    position: relative; 
+    width: 270px;
+    height: 370px;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.5s ease;
+    margin-top: 30px;
+    box-shadow: 10px 5px 8px rgba(0, 0, 0, 0.39);
+}
+
+.product-card:hover {
+    transform: scale(1.1);
+}
+
+.container_card a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.product-card img {
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    position: absolute; /* Позиционируем заголовок абсолютно */
+    bottom: 270px; /* Выравниваем от нижнего края на расстоянии 10px */
+    left: 20px; /* Выравниваем от левого края на расстоянии 20px */
+    right: 20px; /* Выравниваем от правого края на расстоянии 20px */
+}
+
+.product-card p {
+    color: #000000;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.product-card .price {
+    position: absolute;
+    font-weight: bold;
+    bottom: 90px;
+    width: 100%;
+    left: 0;
+}
+
+.product-card button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute; 
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+}
+
+.product-card button:hover {
+    transition-duration: 0.5s;
+    background-color: #3a7bd5;
+}
+
+.container_card{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 15px;
+    max-width: 1200px;
+    justify-content: center;
+    gap: 50px;
+}

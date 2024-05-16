@@ -1,0 +1,168 @@
+:root{
+--background: white;
+}
+
+body{
+}
+
+/* начальная карточка */
+.container_intro{
+    display: flex;
+    margin: 60px auto 0;
+    background-color: rgb(73, 232, 15);
+    width: 1200px;
+    height: 600px;
+    border-radius: 20px;
+}
+
+.column_left,
+.column_right{
+    flex: 1;
+    margin: 30px;
+}
+
+.column_left h1{
+    font-size: 58px;
+}
+
+.column_left p{
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+.column_right{
+    display: flex;
+    align-items: center;
+}
+
+.button_container{
+    border-radius: 5px;
+    border: none;
+    padding: 15px 30px;
+    margin-top: 30px;
+    color: white;
+    background-color: rgb(119, 0, 255);
+}
+
+.button_container:hover{
+    transition-duration: 0.5s;
+    background-color: black;
+}
+
+/* описание профессии */
+
+.container_description{
+    
+    width: 1200px;
+    margin: 50px auto;
+}
+
+.container_description p{
+    font-size: 32px;
+    margin-top: 10px;
+}
+
+.container_description h1{
+    font-size: 48px;
+}
+
+/* информация о професии */
+
+.container_info{
+    display: flex;
+    margin: 0 auto;
+    width: 1200px;
+    margin-top: 60px;
+
+}
+.info_column_left,
+.info_column_right{
+    flex: 1;
+}
+
+.info_column_left p,
+.info_column_right p{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* карточки преподавателей */
+
+.container_cards{
+    justify-content: space-between;
+    width: 1200px;
+    margin: 60px auto;
+    display: flex;
+
+}
+
+.teacher_card img{
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.teacher_card{
+    width: 280px;
+    background-color: rgba(213, 210, 210, 0.436);
+    border-radius: 20px;
+    text-align: left;
+}
+
+.teacher_card p{
+    margin-bottom: 10px;
+    margin-left: 10px;
+
+}
+
+.teacher_card h1{
+    font-size: 26px;
+    margin-left: 10px;
+
+}
+
+/* фотогалерея */
+
+
+.gallery {
+    display: flex;
+    margin: 60px auto;
+    width: 1200px;
+}
+
+.gallery_item {
+    
+    flex: 1;
+}
+
+.gallery_item img {
+    width: 550px;
+    height: 350px;
+    border-radius: 10px;
+
+}
+
+.description {
+    flex: 1;
+    margin-left: 30px;
+    padding: 20px;
+    background-color: rgba(213, 210, 210, 0.436);
+    border-radius: 10px;
+    width: 400px;
+}
+
+.photo_container{
+    background: linear-gradient(to right, #290af2, #3a80e3);
+    width: 700px;
+    height: 500px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons_gallery{
+    
+}

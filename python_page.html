@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/python.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="main_page.html">
+                <h1>DevSkillLab</h1>
+            </a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Материалы</a></li>
+                <li><a href="#">О нас</a></li>
+            </ul>
+        </div>
+        <div class="buttons">
+            <button class="button" id="show-login">Войти</button>
+            <button class="button" id="show-registration">Зарегистрироваться</button>
+        </div>
+    </header>
+    <div class="overlay">
+    </div>
+    <div class="popup_login">
+        <div class="close-btn">&times;</div>
+        <div class="form">
+            <h2>Логин</h2>
+            <div class="form-element">
+                <label for="email">Почта</label>
+                <input type="text" id="email" placeholder="Ведите почту">
+            </div>
+            <div class="form-element">
+                <label for="password">Пароль</label>
+                <input type="text" id="password" placeholder="Введите пароль">
+            </div>
+            <div class="form-element">
+                <input type="checkbox" id="remember-me">
+                <label for="remember-me">Запомнить меня</label>
+            </div>
+            <div class="form-element">
+                <button id="login">Войти</button>
+            </div>
+            <div class="form-element">
+                <a href="#">Забыли пароль?</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup_registration">
+        <div class="close-btn">&times;</div>
+        <div class="form">
+            <h2>Регистрация</h2>
+            <div class="form-element">
+                <label for="email">Почта</label>
+                <input type="text" id="email" placeholder="Ведите почту">
+            </div>
+            <div class="form-element">
+                <label for="password">Пароль</label>
+                <input type="text" id="password" placeholder="Введите пароль">
+            </div>
+            <div class="form-element">
+                <label for="password">Пароль</label>
+                <input type="text" id="password" placeholder="Повторите пароль">
+            </div>
+            <div class="form-element">
+                <button id="registration">Зарегестрироваться</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <main>
+        <div class="container_intro">
+            <div class="column_left">
+                <h1>Основы Python: от начинающего до эксперта</h1>
+                <p>Научитесь программировать на Python с нуля до продвинутых тем. Наш курс предоставляет обширные знания
+                    и практические навыки для разработки приложений, веб-сайтов, анализа данных и многого другого.</p>
+                <button class="button_container">Записаться на курс</button>
+            </div>
+            <div class="column_right">
+                <img src="img/python_one.png" alt="#">
+            </div>
+        </div>
+        <div class="container_description">
+            <h1>Python-Разработчк</h1>
+            <p>Python-разработчик - это специалист, который занимается созданием программного обеспечения с
+                использованием языка программирования Python. Он может работать как независимо, так и в команде
+                разработчиков при создании различных типов программных продуктов, от веб-приложений до научных
+                вычислений.</p>
+            <br>
+            <hr>
+        </div>
+
+        <div class="container_info">
+            <div class="info_column_left">
+                <h1>Заработная плата</h1>
+                <p>Варьируется в зависимости от уровня опыта, компании и региона, <br> но средний доход начинается от 80
+                    000
+                    рублей в месяц.</p>
+            </div>
+
+            <div class="info_column_right">
+                <h1>Стабильный спрос на специалистов</h1>
+                <p>Python-разработчики востребованы во многих сферах: от веб-разработки и анализа данных до машинного
+                    обучения и искусственного интеллекта. Стабильный рост интереса к Python обеспечивает постоянный
+                    поток заказов и вакансий.</p>
+            </div>
+        </div>
+        <div class="container_info">
+            <div class="info_column_left">
+                <h1>Удаленная работа</h1>
+                <p>Большинство задач в разработке программного обеспечения можно выполнять удаленно. Это дает
+                    возможность Python-разработчикам работать из любой точки мира, имея только доступ к интернету.</p>
+            </div>
+
+            <div class="info_column_right">
+                <h1>Обучение и подготовка</h1>
+                <p>Для старта в карьере Python-разработчика рекомендуется пройти специализированные курсы или обучение
+                    на практике. В среднем достаточно 6-12 месяцев интенсивного обучения, чтобы освоить основы языка и
+                    начать работать в данной сфере.</p>
+            </div>
+        </div>
+        <div class="container_cards">
+            <div class="teacher_card">
+                <img src="img/vitaliy_crad.jpg" alt="#">
+                <h1>Виталий Кошкин</h1>
+                <p>Виталий - опытный Python-разработчик с фокусом на веб-разработке и анализе данных. В своем курсе он
+                    делится
+                    практическим опытом создания веб-приложений на Django, а также знаниями по использованию Python для
+                    обработки данных и создания алгоритмов машинного обучения.</p>
+            </div>
+            <div class="teacher_card">
+                <img src="img/elena_card.jpg" alt="#">
+                <h1>Елена Сидорова</h1>
+                <p> Елена - специалист в области искусственного интеллекта и машинного обучения. Ее курс предоставляет
+                    студентам понимание основных концепций машинного обучения и его практическое применение в реальных
+                    проектах.</p>
+            </div>
+            <div class="teacher_card">
+                <img src="img/max_card.jpg" alt="#">
+                <h1>Максим Петров</h1>
+                <p>Максим - опытный разработчик программного обеспечения с углубленными знаниями в Python. В своем курсе
+                    он делится с учениками своим опытом разработки высокопроизводительных приложений на Python, а также
+                    передает знания о современных инструментах и библиотеках.
+                </p>
+            </div>
+            <div class="teacher_card">
+                <img src="img/alex_card.jpg" alt="#">
+                <h1>Александра Ковалева</h1>
+                <p> Александра - Python-разработчик с акцентом на веб-разработке и разработке API. Ее курс
+                    охватывает создание веб-приложений с использованием фреймворка Flask, а также разработку RESTful API
+                    на Python для взаимодействия с внешними сервисами.</p>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <div class="gallery_item">
+                <div class="photo_container">
+                    <img src="img/theory_python.png" alt="Photo 1">
+                </div>
+                <div class="description">
+                    <h2>Теория</h2>
+                    <p>Присоединитесь к нашему онлайн-курсу и начните свой путь к освоению языка программирования
+                        Python. Регистрация на нашем сайте обеспечит вам доступ к обширным учебным материалам,
+                        разработанным экспертами в области Python. Получите фундаментальные знания о синтаксисе,
+                        структурах данных, функциях и многом другом, что поможет вам стать успешным
+                        Python-разработчиком.</p>
+                    <div class="buttons_gallery">
+                        <button class="btn_gallery prevBtn">Назад</button>
+                        <button class="btn_gallery nextBtn">Вперед</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery_item">
+                <div class="photo_container">
+                    <img src="img/practice_python.png" alt="Photo 2">
+                </div>
+                <div class="description">
+                    <h2>Практика</h2>
+                    <p>После завершения теоретического курса вы получите доступ к нашим интерактивным заданиям и
+                        проектам, которые помогут вам применить ваши знания на практике. Мы предлагаем широкий
+                        спектр задач, начиная от простых упражнений по основам Python до более сложных проектов,
+                        которые помогут вам улучшить навыки программирования.</p>
+                    <div class="buttons_gallery">
+                        <button class="btn_gallery prevBtn">Назад</button>
+                        <button class="btn_gallery nextBtn">Вперед</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery_item">
+                <div class="photo_container">
+                    <img src="img/feedback_python.png" alt="Photo 3">
+                </div>
+                <div class="description">
+                    <h2>Обратная связь</h2>
+                    <p>Мы ценим ваше обучение и стремимся предоставить вам наилучший опыт обучения. Поэтому мы
+                        предоставляем возможность получения обратной связи от наших студентов. После завершения
+                        каждого модуля курса вы сможете оценить материалы, оставить свои комментарии и задать
+                        вопросы нашей команде поддержки. Мы готовы помочь вам на каждом этапе вашего обучения.</p>
+                    <div class="buttons_gallery">
+                        <button class="btn_gallery prevBtn">Назад</button>
+                        <button class="btn_gallery nextBtn">Вперед</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </main>
+    <footer class="footer">
+        <div class="container_footer">
+            <div class="column_footer_left">
+                <h1>8 812 775 14 52</h1>
+                <p class="number">контактный центр</p>
+            </div>
+            <div class="column_footer_right">
+                <P>Санкт-Петербург, Лиговский пр. 76, 1 этаж, комната 23, 19181</P>
+                <p class="mail">devskill@lab.com</p>
+
+            </div>
+            <div class="logo_container">
+                <a href="https://vk.com/skyjeak">
+                    <img src="img/logo_vk.png" alt="vk" class="logo_footer">
+                </a>
+                <a href="https://t.me/YngCharm">
+                    <img src="img/logo_tg.png" alt="tg" class="logo_footer">
+                </a>
+            </div>
+        </div>
+        <div class="adittional_container_footer">
+            <div class="adittional_column_footer_left">
+
+                <p class="partners">Наши партнёры:
+                    <br>
+                    <br>
+                <ul>
+                    <li><a href="https://www.codecademy.com/">Codecademy</a></li>
+                    <li><a href="https://www.coursera.org/">Coursera</a></li>
+                    <li><a href="https://www.udemy.com/">Udemy</a></li>
+                    <li><a href="https://www.edx.org/">edX</a></li>
+                    <li><a href="https://www.pluralsight.com/">Pluralsight</a></li>
+                </ul>
+                <br>
+                Совместное сотрудничество с этими компаниями <br> позволяет нам предоставить нашим ученикам доступ к
+                лучшему обучению и развитию навыков в цифровой сфере.</p>
+                <p class="copyright "> © 2024 DevSkillLab.</p>
+            </div>
+            <div class="adittional_column_footer_right">
+                <p class="cookie">Мы используем файлы cookie, чтобы обеспечить персонализацию сервисов и повысить
+                    удобство пользования сайтом. <br>
+                    Если вы не согласны с использованием файлов cookie, вы можете изменить настройки своего браузера.
+                    <br>
+                    <br>
+
+                    DevSkillLab — платформа для обучения цифровым навыкам. У нас вы найдете широкий спектр курсов по
+                    программированию, дизайну, маркетингу и многому другому. Обучайтесь новым навыкам и достигайте своих
+                    целей вместе с нами! <br>
+                    Вся предоставляемая образовательная деятельность осуществляется в соответствии с действующим
+                    законодательством. DevSkillLab зарегистрирован как образовательный ресурс и стремится обеспечить
+                    высокое качество обучения своих учеников.
+                </p>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <script src="js/popup_login.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+
+</html>
